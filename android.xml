@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/purple_200">
+    <ImageButton
+        android:id="@+id/images6"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/icons"
+        tools:ignore="MissingConstraints">
+    </ImageButton>
+
+    <TextView
+        android:id="@+id/textmy"
+        android:layout_width="414dp"
+        android:layout_height="205dp"
+        android:gravity="center"
+        android:text="Here you can login"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp"></TextView>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Usarname"
+        android:id="@+id/inputtake"
+        android:ems="10"
+        android:paddingStart="24dp"
+        android:textAlignment="center"
+        android:textColor="@color/purple_700"
+        android:textSize="40sp"
+        android:inputType="text"
+        app:layout_constraintStart_toEndOf="@id/textmy"
+        android:elevation="60dp"
+        android:drawablePadding="30dp"
+        tools:layout_editor_absoluteY="144dp"></EditText>
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/img_2"
+        app:layout_constraintStart_toEndOf="@id/inputtake"
+        app:layout_constraintTop_toBottomOf="@+id/inputtake"></ImageView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:gravity="center"
+        android:text="You are Welcom"
+        app:layout_constraintBottom_toTopOf="@+id/imageView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@id/inputtake"
+        android:textColor="@color/purple_500"
+        app:layout_constraintStart_toStartOf="@+id/imageView2"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        android:textSize="30dp"
+        app:layout_constraintVertical_bias="0.276"></TextView>
+</androidx.constraintlayout.widget.ConstraintLayout>
